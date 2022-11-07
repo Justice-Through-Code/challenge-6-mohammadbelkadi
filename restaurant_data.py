@@ -70,4 +70,4 @@ def clean_print():
     #       url: https://www.yelp.com/biz/four-barrel-coffee-san-francisco`
     # etc etc
     for key, pair in restaurant_1.items():
-        print(f'{key}:{pair}')
+        print(f'{key} : {pair}')
