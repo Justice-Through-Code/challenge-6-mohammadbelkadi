@@ -29,7 +29,7 @@ def explore_data():
     # it should include the address, city, state and the zip code, with commas between them e.g.:
     # "375 Valencia St, San Francisco, CA, 94103"
 
-    print(f'{restaurant_1 ["address"]}, {restaurant_1 ["city"]}, {restaurant_1 ["state"]}, {restaurant_1 ["zip_code"]}')
+    print(f'{restaurant_1 ["address"]},{restaurant_1 ["city"]},{restaurant_1 ["state"]}, {restaurant_1 ["zip_code"]}')
 
 def favorite_restaurant():
     # Let's ask the user for some information about their favorite restaurant
