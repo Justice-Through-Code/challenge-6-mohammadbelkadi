@@ -29,8 +29,8 @@ def explore_data():
     # it should include the address, city, state and the zip code, with commas between them e.g.:
     # "375 Valencia St, San Francisco, CA, 94103"
 
-    print(f'{restaurant_1 ["address"]},{restaurant_1 ["city"]},{restaurant_1 ["state"]}, {restaurant_1 ["zip_code"]}')
-
+    print(f'{restaurant_1 ["address"]}, {restaurant_1 ["city"]}, {restaurant_1 ["state"]}, {restaurant_1 ["zip_code"]}')
+#explore_data()
 def favorite_restaurant():
     # Let's ask the user for some information about their favorite restaurant
 
@@ -43,9 +43,9 @@ def favorite_restaurant():
     #        "address" : "116th & Broadway, NY 10016",
     #        "favorite_dish" : "Chicken BLT Sandwich"
     #    }
-    favorite_restaurant['name'] = input("what is your favorite restaurant")
-    favorite_restaurant['address'] = input("what is your favorite restaurants address")
-    favorite_restaurant['favorite_dish'] = input("what is your favorite dish")
+    favorite_restaurant['name'] = input("what is your favorite restaurant?")
+    favorite_restaurant['address'] = input("what is your favorite restaurants address?")
+    favorite_restaurant['favorite_dish'] = input("what is your favorite dish?")
     # 2.3 TODO: Print out your dictionary to make sure it populated correctly
     print(favorite_restaurant)
     # Oh no, the restaurant stopped serving the user's favorite dish!
@@ -60,7 +60,7 @@ def favorite_restaurant():
     # 2.7 TODO: Print out the restaurant's new address by printing the dictionary's value 
     # for the key `address`
     print(favorite_restaurant["address"])
-
+'''favorite_restaurant()'''
 def clean_print():
     # It's hard to read the contents of a dictionary when we print the whole thing out.
 
@@ -70,4 +70,5 @@ def clean_print():
     #       url: https://www.yelp.com/biz/four-barrel-coffee-san-francisco`
     # etc etc
     for key, pair in restaurant_1.items():
-        print(f'{key} : {pair}')
+        print(f'{key}: {pair}')
+#clean_print()
